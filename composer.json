@@ -1,0 +1,36 @@
+{
+    "name": "chinayin/aliyun-php-sdk",
+    "description": "Aliyun SDK for PHP",
+    "keywords": ["aliyun", "php", "sdk"],
+    "homepage": "http://www.aliyun.com/",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [{
+        "name": "Aliyuncs",
+        "homepage": "https://www.aliyun.com"
+    }],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "classmap": [
+            "aliyun-php-sdk-core/"
+        ],
+        "exclude-from-classmap": [
+            "aliyun-php-sdk-core/Config.php",
+            "aliyun-php-sdk-core/Autoloader/"
+        ],
+        "files": [
+            "aliyun-php-sdk-core/Regions/EndpointConfig.php"
+        ],
+        "psr-4": {
+            "Dm\\": "aliyun-php-sdk-dm/Dm"
+        }
+    },
+    "autoload-dev": {
+    }
+}
