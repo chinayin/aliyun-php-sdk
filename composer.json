@@ -18,17 +18,17 @@
     "minimum-stability": "stable",
     "autoload": {
         "classmap": [
-            "aliyun-php-sdk-core/"
+            "src/aliyun-php-sdk-core/"
         ],
         "exclude-from-classmap": [
-            "aliyun-php-sdk-core/Config.php",
-            "aliyun-php-sdk-core/Autoloader/"
+            "src/aliyun-php-sdk-core/Config.php",
+            "src/aliyun-php-sdk-core/Autoloader/"
         ],
         "files": [
-            "aliyun-php-sdk-core/Regions/EndpointConfig.php"
+            "src/aliyun-php-sdk-core/Regions/EndpointConfig.php"
         ],
         "psr-4": {
-            "Dm\\": "aliyun-php-sdk-dm/Dm"
+            "Dm\\": "src/aliyun-php-sdk-dm/Dm"
         }
     },
     "autoload-dev": {
